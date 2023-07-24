@@ -1,6 +1,7 @@
 import { User } from "../models/user.js";
 import bcrypt from "bcrypt";
 import { sendCookies } from "../utils/features.js";
+import errorHandler from "../middlewares/error.js";
 
 export const login = async (req, res, next) => {
   try {
